@@ -1,0 +1,25 @@
+.types__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+}
+
+.pok__img {
+  flex-grow: 1;
+}
+
+.pok__name {
+  border: 1px solid grey;
+  height: 40px;
+}
+
+.type__item {
+  border-radius: 5px;
+  background-color: darkgray;
+  height: 25px;
+  width: 80px;
+}

@@ -1,0 +1,20 @@
+.pokemons__list {
+  list-style: none;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pok__item {
+  border: 1px solid grey;
+  margin: 15px;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: azure;
+  border-radius: 5px;
+}
