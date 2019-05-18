@@ -4,9 +4,11 @@ import './Pokemon.css';
 
 class Pokemon extends React.Component {
   render(){
-    const url = this.props.url;
-    const name = this.props.name;
-    const types = this.props.types;
+    // const url = this.props.url;
+    // const name = this.props.name;
+    // const types = this.props.types;
+
+    const {name, url, types} = this.props;
 
     return(
       <div className="card-container">
@@ -29,6 +31,6 @@ class Pokemon extends React.Component {
 Pokemon.propTypes = {
   url: PropTypes.string,
   name: PropTypes.string,
-  types: PropTypes.string
+  types: PropTypes.array
 }
 export default Pokemon;

@@ -15,6 +15,7 @@
 .pok__name {
   border: 1px solid grey;
   height: 40px;
+  line-height: 40px;
 }
 
 .type__item {

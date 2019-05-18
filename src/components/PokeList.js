@@ -6,13 +6,13 @@ import './PokeList.css';
 class PokeList extends React.Component {
   
   render (){
-    const pokemon = this.props.pokemon;
+    const {pokemon} = this.props;
 
     return(
       <ul className="pokemons__list">
-        {pokemon.map((pok, index) => {
+        {pokemon.map(pok => {
           return(
-            <li className="pok__item" key={index}>
+            <li className="pok__item" key={pok.id}>
               <Pokemon
                 url = {pok.url}
                 name = {pok.name}
