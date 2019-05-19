@@ -4,10 +4,7 @@ import './Pokemon.css';
 
 class Pokemon extends React.Component {
   render(){
-    // const url = this.props.url;
-    // const name = this.props.name;
-    // const types = this.props.types;
-
+    
     const {name, url, types} = this.props;
 
     return(
