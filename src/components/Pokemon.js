@@ -5,10 +5,10 @@ import './Pokemon.css';
 class Pokemon extends React.Component {
   render(){
 
-    const {name, url, types} = this.props;
+    const {name, url, types, favorite} = this.props;
 
     return(
-      <div className="card-container">
+      <div className={favorite === true ? "card-container" : ""}>
         <img src={url} alt="" className="pok__img"/>
         <h2 className="pok__name">{name}</h2>
         <ul className="types__list">

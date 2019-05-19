@@ -26,3 +26,10 @@
   line-height: 25px;
   width: 80px;
 }
+
+.card-container {
+  background-color: darkorange;
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+  height: 100%;
+}
