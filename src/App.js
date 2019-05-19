@@ -23,8 +23,8 @@ class App extends React.Component {
 
   handleSelect(item) {
 
-    // const newItem = {...item, favorite: true};
-    const newItem = item.favorite === false ? {...item, favorite: true} : {...item, favorite: false};
+    const newItem = {...item, favorite: !item.favorite};
+    // const newItem = item.favorite === false ? {...item, favorite: true} : {...item, favorite: false};
 
     this.setState((prevState) => {
       const newPokemonList = prevState.pokemonList.map(item => 
@@ -37,8 +37,6 @@ class App extends React.Component {
       });
     })
   }
-
-
 
   render() {
     return (
